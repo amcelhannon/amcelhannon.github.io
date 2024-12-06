@@ -134,15 +134,28 @@
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
-              <h3>Project Title</h3>
+              <h3>SurfBuddy</h3>
               <p>
-               Motivation of the project
+               In a comp class, my friends and I were given the task of creating a final project for the semester. Using the oppotunity, we decided to make something that would be useful to 
+               to at least one of us, who is an avid surfer.
               </p>
               <p>
-              Functional requirements/what the project does
+              Using weather data pulled from government buoys and weather stations, we created a system that allows a user to view real-time surfdata and get surf spot recommendations,
+              right from the comfort of the computer terminal.
               </p>
               <p>
-              Project design
+              <h5>Project Design</h5>
+              A SurfBuddy object is initialized and populated with surfSpots- a class representing individual surfing locations. A surfSpot object contains info such as a short description, geographical position, and the name of the nearest NOAA buoy.
+              When a Surfspot object is asked to display data, it automatically requests it from a specialized request class that is connected to both the NOAA and NDBC ApIs.
+              This request class returns data in the form of a BuoyData and WeatherStationData object respectively, which are special data containers we've made.
+
+            
+                
+              Then using the terminal, a user is able to choose from a range of options, such as:
+                  -The ability to list all given surfSpots. For the purpose of this project, example data of local SoCal surfing locations were chosen.
+                  -The ability to look at each surfSpot individually
+                  -The ability to look at a ranked list of surfSpots, organized based off of user preferences (perferred difficulty, for example)
+              Then, when a user asks to to ea
               </p>
               <p>
               Implementation
