@@ -110,6 +110,9 @@
      font-weight: 700;
  }
 
+ .spacer{
+    height: 5em;
+ }
  footer {
      margin-bottom: 10px;
      display: flex;
