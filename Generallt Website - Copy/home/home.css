@@ -1,0 +1,196 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    width: 75%;
+    margin: 3em auto 3em auto;
+}
+
+#hero {
+    height: 30em;
+    padding: 2em;
+    border-radius: 2em;
+    border: 2px solid hsl(215, 19%, 37.5%);
+    background-image: url(images/hero-img.jpg);
+    background-size: 100%;
+    transition: all 1000ms;
+}
+
+#hero:hover{
+    background-size: 102.5%;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1000ms;
+}
+
+#hero:hover .wrapper{
+    transform: scale(1.02);
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin: 0 30% 0 0;
+    color: hsl(215, 19%, 65%);
+}
+
+#hero a {
+    display: flex;
+    width: fit-content;
+    padding: .5em 1em;
+    margin: .75em auto 0 5%;
+    font-size: 3rem;
+    border-radius: .75em;
+    text-decoration: none;
+    background-color: hsl(215, 19%, 42.5%);
+    border: 2px solid hsl(215, 19%, 37.5%);
+    display: flex;
+    align-content: center;
+    justify-content: left;
+    transition: all 1000ms;
+}
+#hero a:hover{
+    background-color: hsl(215, 19%, 37.5%);
+    border: 2px solid hsl(215, 19%, 32.5%);
+    color: hsl(215, 19%, 57%);
+}
+
+#hero svg {
+    height: 1.5rem;
+    width: auto;
+    margin: auto 0;
+    transition: all 1000ms;
+}
+
+#hero a:hover svg{
+    transform: translateX(.75em);
+}
+
+
+
+
+
+.card {
+    border-radius: 2em;
+    background-color: hsl(215, 19%, 40%);
+    border: 1px solid hsl(215, 19%, 25%);
+    height: 20em;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: all 800ms;
+    display: flex;
+    overflow: hidden;
+    transition: all 1000ms;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    padding: 3em 1em 3em 3em;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.4rem;
+    font-size: 1.1rem;
+    transition: all 1000ms;
+}
+
+.card:hover .left {
+    transform: scale(1.05);
+}
+
+.browse {
+    width: fit-content;
+    margin: .75em auto 0 auto;
+    padding: .25em .5em;
+    border-radius: 1em;
+    font-size: 1.25rem;
+    background-color: hsl(215, 19%, 42.5%);
+    border: 2px solid hsl(215, 19%, 37.5%);
+    display: flex;
+    align-content: center;
+    justify-content: left;
+}
+
+.browse a {
+    margin: auto 0;
+}
+
+.browse p {
+    transition: all 1000ms;
+}
+
+.browse svg {
+    height: .75rem;
+    width: auto;
+    margin: auto 0;
+    transition: all 1000ms;
+}
+
+.browse:hover {
+    background-color: hsl(215, 19%, 40%);
+    border: 2px solid hsl(215, 19%, 35%);
+    color: hsl(215, 19%, 60%);
+}
+
+.browse:hover p {
+    color: hsl(215, 19%, 60%);
+}
+
+.browse:hover svg {
+    transform: translateX(.25em);
+}
+
+.right {
+    width: 50%;
+    background-size: 100%;
+    transition: background-size 1000ms;
+}
+
+.card:hover .right{
+    background-size: 101.5%;
+}
+
+#right-who {
+    background-image: url(images/who-img.jpg);
+}
+
+#right-how {
+    background-image: url(images/how-img.png);
+}
+
+#right-story {
+    background-image: url(images/story-img.png);
+}
+
+#right-partners {
+    background-image: url(images/partners-img.png);
+}
+
+.never {
+    width: fit-content;
+    margin: .75em auto 0 auto;
+    padding: .25em .5em;
+    border-radius: 1em;
+    font-size: 1.25rem;
+    background-color: hsl(215, 19%, 40%);
+    border: 2px solid hsl(215, 19%, 40%);
+    transition: all 1000ms;
+}
+
+.never p {
+    color: hsl(215, 19%, 40%);
+    transition: all 1000ms;
+}
+
+.never:hover {
+    background-color: hsl(215, 19%, 35%);
+    border: 2px solid hsl(215, 19%, 32.5%);
+}
+
+.never:hover p {
+    color: hsl(215, 19%, 25%);
+}

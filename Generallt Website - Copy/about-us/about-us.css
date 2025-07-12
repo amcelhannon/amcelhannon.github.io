@@ -1,0 +1,94 @@
+body h1 {
+    text-align: center;
+    font-size: 7rem;
+}
+
+.people {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.crew-bio {
+    background-color: hsl(215, 19%, 40%);
+    border-radius: 50px;
+    padding: 35px 25px;
+    text-align: center;
+    color: hsl(215, 19%, 60%);
+    font-size: 1.2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    border-radius: 50px;
+}
+
+.crew-bio h2 {
+    text-align: center;
+    font-size: 5rem;
+    color: hsl(215, 19%, 65%);
+    padding: 5px 0px;
+}
+
+#johnson {
+    width: 100%;
+}
+
+#johnson a img {
+    background-color: aliceblue;
+    width: 450px;
+    height: 450px;
+}
+
+#eve {
+    width: 48%;
+}
+
+#eve img {
+    height: 450px;
+}
+
+#adam {
+    width: 48%;
+}
+
+#adam img {
+    height: 450px;
+}
+
+#backer {
+    width: 100%;
+}
+
+#backer img {
+    height: 500px;
+}
+
+aside {
+    background-color: hsl(215, 19%, 40%);
+    padding: 1% 5%;
+    color: hsl(215, 19%, 60%);
+    font-size: 1.75rem;
+}
+
+aside h2 {
+    text-align: left;
+    font-size: 4rem;
+    color: hsl(215, 19%, 65%);
+    padding-bottom: 15px;
+}
+
+aside a {
+    color: hsl(215, 12%, 30%);
+}

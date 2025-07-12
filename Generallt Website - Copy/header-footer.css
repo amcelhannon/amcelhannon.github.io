@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-size-adjust: auto;
+    color: hsl(215, 12%, 70%);
+    fill: hsl(215, 19%, 25%);   
+}
+
+body {
+    margin: 0 auto;
+    max-width: 2000px;
+    min-width: 800px;
+    background-color: hsl(35, 55%, 95%);
+    color: hsl(215, 19%, 65%);   
+}
+
+/* header */
+header {
+    height: 375px;
+    width: 100%;
+    padding-top: 2%;
+    background-color: hsl(35, 55%, 91%);
+    display: block;
+}
+
+.logo-top {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 84%;
+}
+
+.logo-top a {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-top a img {
+    width: fit-content;
+    height: 100%;
+}
+
+nav {
+    height: 16%;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.menu-item {
+    height: 100%;
+    border-left: 1px solid black;
+    text-decoration: none;
+    padding: 1%;
+    width: auto;
+    background-color: hsl(35, 55%, 86%);
+    transition: all 500ms;
+}
+
+.menu-item a {
+    text-decoration: none;
+    margin: auto;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-size: 2rem;
+    color: hsl(215, 19%, 55%);
+    font-weight: 500;
+    transition: all 500ms;
+}
+
+.menu-item:hover {
+    background-color: hsl(35, 55%, 83%);
+}
+
+.menu-item:hover a {
+    text-shadow: 0 0 .65px hsl(215, 19%, 40%), 0 0 .65px hsl(215, 19%, 40%);
+    color: hsl(215, 19%, 40%);
+    transform: translateY(-.3em);
+    text-decoration: underline;
+}
+
+.current {
+    background-color: hsl(35, 55%, 83%);
+}
+
+.current a {
+    text-shadow: 0 0 .65px hsl(215, 19%, 40%), 0 0 .65px hsl(215, 19%, 40%);
+    color: hsl(215, 19%, 40%);
+    transform: translateY(-.3em);
+    text-decoration: underline;
+}
+
+.egg {
+    flex: 1;
+    padding: 0 0 0 1em;
+    margin: 0;
+    height: 100%;
+    background-color: hsl(35, 55%, 86%);
+
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.secret {
+    height: 100%;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+
+}
+
+.secret p {
+    color: hsl(215, 19%, 40%);
+}
+
+.sliding {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(35, 55%, 86%);
+}
+
+.sliding-anchor {
+    height: 100%;
+}
+
+.sliding-anchor img {
+    height: 100%;
+}
+
+.egg:hover .sliding {
+    animation-delay: 500ms;
+    animation: slide 6250ms ease-in-out forwards;
+}
+
+@keyframes slide {
+    0% {
+        width: 100%;
+    }
+
+    25% {
+        width: 4em;
+    }
+
+    50% {
+        width: 4em;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: fit-content;
+}
+
+.footer-top {
+    height: 20%;
+    padding: 1% 1.5%;
+    display: flex;
+    border: 2px solid black;
+    border-bottom: 0px;
+    font-size: 2rem;
+    background-color: hsl(215, 25%, 50%);
+}
+
+.footer-top-left {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-top-left p {
+    text-align: left;
+    color: hsl(215, 19%, 30%);
+}
+
+.footer-top-right {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-top-right svg {
+    margin-top: .25em;
+    width: 1em;
+    height: 1em;
+    transition: rotate 500ms;
+}
+
+.footer-top-right svg:hover {
+    rotate: -30deg;
+    animation: rotation 625ms infinite linear alternate;
+}
+
+@keyframes rotation {
+    to {
+        transform: rotate(37.5deg);
+    }
+}
+
+.footer-bottom {
+    height: 80%;
+    border: 2px solid black;
+    border-top: 2px solid black;
+    display: flex;
+    background-color: hsl(215, 19%, 30%);
+    font-size: 1rem;
+}
+
+.footer-bottom-col {
+    width: auto;
+    padding: 1.5%;
+}
+
+#footer-Generallt {
+    width: 50%;
+}
+
+.footer-bottom h3 {
+    font-size: 1.5rem;
+}
+
+hr {
+    width: 75%;
+    border: 1px solid;
+}
+
+.footer-bottom-col svg {
+    width: 1em;
+    fill: hsl(215, 19%, 100%);
+}
+
+#footer-Products {
+    width: 15%;
+    font-size: .75rem;
+}
+
+#footer-Useful-Links {
+    width: 20%;
+    font-size: .75rem;
+}
+
+#footer-Contact {
+    width: 22.5%;
+    font-size: .75rem;
+}
+
+#footer-Contact a {
+    display: flex;
+    text-decoration: none;
+}
+
+#footer-Contact a p {
+    text-decoration: underline;
+}
