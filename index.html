@@ -37,9 +37,9 @@
                     <div class="paragraph">
                         <h3>Who I am</h3>
                         <p>
-                            My Name is Andrew McElhannon, and though I'm from the East Coast, I'm currently a third
+                            My Name is Andrew McElhannon, and though I'm from the East Coast, I'm currently a fourth
                             year undergrad at University of San Diego. I'm pursuing a BA in computer science and am
-                            set to graduate in 2026.
+                            set to graduate in May 2026.
                         </p>
                     </div>
                     <div class="paragraph">
@@ -64,6 +64,43 @@
         </section>
         <section>
             <h2 id="projects">Projects</h2>
+            <div class="columns">
+                <div class="left">
+                    <img src="images/ProcessorSchematic.png" alt="Processor Schematic">
+                    <p>
+                        Project based on schematic shown here, reproduced from the class textbook titled <b><i>Digital Design and Architecture Risc-V edition</i></b>
+                        by Sarah Harris and David Harris
+                    </p>
+                </div>
+                <div class="right">
+                    <div class="project-name">Pipelined Processor</div>
+                    <div class="paragraph">
+                        <h3>Overview</h3>
+                        <p>
+                            As the final project for a class called Digital hardware, a partner and I had to improve the 
+                            previously edited pipelined processor design described in our textbook, with edits made by our professor.
+                            This was primarily done in SystemVerilog, a HDVL language, and involved concepts of forwarding and inter-stage
+                            registers to handle data hazards.
+
+                        </p>
+                    </div>
+                    <div class="paragraph">
+                        <h3>Project Design</h3>
+                        <p>
+                            The processor is proven by a series of benchtests, which are formatted instructions that are
+                            fed into the processor, whose results and signal waveforms are checked, sometimes manually, against expected values.
+                        </p>
+                        <p>
+                            The end result of this project is not a virtual machine coded from scratch, far from it,
+                            but instead a single functiong processor. It is rather the understanding and background that was neccessary
+                            and taught to me through my course that is the result and what I am most proud of. I have a very strong respect for
+                            the industry and people that are involved in the manufacture of not just just single processors, but entire standalone devices.
+                        </p>
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
             <div class="columns">
                 <div class="left">
                     <img src="images/SurfBuddyUML.png" alt="UML diagram of the SurfBuddy project">
@@ -124,6 +161,41 @@
             <div class="spacer"></div>
             <div class="columns">
                 <div class="left">
+                    <img src="images/AdversysLogo.png" alt="Adversys Logo">
+                </div>
+                <div class="right">
+                    <div class="project-name">Adversys</div>
+                    <div class="paragraph">
+                        <h3>Overview</h3>
+                        <p>
+                            As part of my university's senior project pairing, I was lucky enough
+                            to work with the CEO of Adversys as a mentor, who is also a professor 
+                            at our school.
+                        </p>
+                        <p>
+                            Adversys is a cybersecurity tool based on the VSCode editor that
+                            allows the usage of user-specified AI agents, similar to Cursor,
+                            but with the added extensionality of a suite of cybersecurity focused
+                            tools.
+                        </p>
+                    </div>
+                    <div class="paragraph">
+                        <h3>Project Contributions</h3>
+                        <p>
+                            Three other CS seniors and I have the current task of modifying the existing
+                            code base to support further integration of the embedded AI agents and cybersecurity tools,
+                            while adhering to the moden concepts of agile workflow and sprints, as might be expected in a software engineering role.
+                        </p>
+                        <p>
+                            Our current plan aims to have AI agents scan for vulnerabilities using existing Adversys tools and
+                            generate remediation reports based on its findings. The goal is for safe, helpful and secure automation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="columns">
+                <div class="left">
                     <img src="images/GeneralltPreview.png" alt="Generallt Preview" title="Generallt Preview">
                 </div>
                 <div class="right">
@@ -150,6 +222,34 @@
                         </p>
                         <p>A link to the project can be found <a target="_blank" rel="noopener noreferrer"
                                 href="Generallt Website - Copy/home/index.html">here</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer"></div>
+            <div class="columns">
+                <div class="left">
+                    <img src="images/OldNetworkDiagram.png" alt="OldNetworkDiagram">
+                    <img src="images/NetworkDiagram.png" alt="NetworkDiagram">
+                </div>
+                <div class="right">
+                    <div class="project-name">Virtual Network</div>
+                    <div class="paragraph">
+                        <h3>Overview</h3>
+                        <p>
+                            As a student progresses through my university's cybersecurity program, they slowly build
+                            up a virtual network in order to complete assigned labs and exercises. These labs include
+                            the process of building a VM network, of installing and configuring a virtual firewall, and
+                            performing attacks such as brute-force password guessing.
+                        </p>
+                    </div>
+                    <div class="paragraph">
+                        <h3>Project Design</h3>
+                        <p>
+                            The course was a bit in flux during my enrollment, and so the network that was eventually
+                            deployed deviates from the original blueprint by the exclusion of a security Onion and Windows server,
+                            and the addition of a pfSense firewall, a Wazuh server, and a Wazuh agent. This is shown in a simplified
+                            network diagram partially created by one of my peers. Beyond that, the implementation and skills required are much the same.
+                        </p>
                     </div>
                 </div>
             </div>
